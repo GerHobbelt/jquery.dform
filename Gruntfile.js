@@ -20,6 +20,10 @@ module.exports = function (grunt) {
 			dist: {
 				src: ['src/dform.js', 'src/dform.core.js', 'src/dform.extensions.js'],
 				dest: 'dist/<%= pkg.name %>-<%= pkg.version %>.js'
+			},
+			dev: {
+				src: ['src/dform.js', 'src/dform.core.js', 'src/dform.extensions.js', 'src/dform.converters.js'],
+				dest: 'dist/<%= pkg.name %>-dev.js'
 			}
 		},
 		uglify: {
